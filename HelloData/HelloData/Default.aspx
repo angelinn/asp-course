@@ -4,10 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Отчет за продажбите</title>
 </head>
 <body>
     <form runat="server">
+    <h1>Отчет за продажбите</h1>
     <div>
     </div>
     </form>
