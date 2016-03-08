@@ -20,6 +20,12 @@
                 <asp:ChartArea />
             </ChartAreas>
         </asp:Chart>
+        <asp:GridView runat="server" AutoGenerateColumns="False" DataSourceID="TotalSalesSqlDataSource" AllowSorting="True">
+            <Columns>
+                <asp:BoundField DataField="CategoryName" HeaderText="Категория" SortExpression="CategoryName"></asp:BoundField>
+                <asp:BoundField DataField="TotalProductSales" HeaderText="Продажби" SortExpression="TotalProductSales"></asp:BoundField>
+            </Columns>
+        </asp:GridView>
         <asp:SqlDataSource runat="server" ID="TotalSalesSqlDataSource" ConnectionString='<%$ ConnectionStrings:NortwindConnection %>' SelectCommand="SELECT * FROM [Total Sales by Category]"></asp:SqlDataSource>
     </div>
     </form>
